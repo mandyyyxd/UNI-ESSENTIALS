@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-image: url(../Images/BackgroundPattern.png);
+    background-color: #F8F9FA;
+    border-radius: 1.5797788309636651vh;
+}
+
+.darkMode {
+    background-color: #0e1f31;
+}
+
+header {
+    background: #2C3E50;
+    color: #e4e0e0;
+    padding: 1rem 0;
+    width: 100vw;
+    overflow-x: hidden;
+    border: 0.315955766192733vh solid rgb(0, 0, 0);
+}
+
+.pageHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.pageHeading .logo img {
+    max-width: 15rem;
+}
+
+.pageHeading form {
+    display: flex;
+    align-items: center;
+}
+
+.pageHeading form input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #F8F9FA;
+}
+
+#searchButton {
+    padding: 0.5rem 1rem;
+    border: 0.05rem solid rgb(255, 255, 255);
+    background-color: hsla(210, 29%, 44%, 0.5);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    margin-left: 0.5rem;
+}
+
+#searchButton:hover {
+    background-color: hsla(210, 29%, 54%, 0.5);
+}
+
+#menu {
+    padding: 0.5rem 1rem;
+    border: 0.05rem solid rgb(255, 255, 255);
+    background-color: hsla(210, 29%, 34%, 0.5);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    margin-left: 0.5rem;
+}
+
+#menu:hover {
+    background-color: hsla(210, 29%, 54%, 0.5);
+}
+
+.pageHeading form button img {
+    max-width: 1.25rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 98vw;
+    width: 100%;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    color: #ECF0F1;
+}
+
+#userProfilePic {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 25%;
+    max-width: 3rem !important;
+    height: auto;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-left: 2rem; 
+}
+
+.logoutBTN {
+    padding: 0.25rem 1rem;
+    border: 0.05rem solid rgb(255, 255, 255);
+    background-color: hwb(0 100% 0% / 1);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    margin-left: 1rem;
+}
+
+.logoutBTN:hover {
+    background-color: hsl(0, 0%, 92%);
+}
+
+.navbar {
+    background-color: #ECF0F1;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    overflow: hidden;
+    margin-top: 2vh;
+    align-items: center;
+}
+
+.navbar a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #2C3E50;
+    color: #1ABC9C;
+}
+
+.selected {
+    background-color: #9b9b9b;
+}
+
+main {
+    padding: 1.5rem;
+    min-height: 70vh;
+}
+
+.content {
+    background-color: #F8F9FA;
+    border-radius: 0.5rem;
+    border: 0.075rem solid hsl(210, 17%, 70%);
+}
+
+footer {
+    background-color: #2C3E50;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.socials {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 1rem;
+    border: 0.25rem solid black;
+    justify-content: center;
+    align-content: center;
+    flex: 0.3;
+}
+
+.table {
+    background-color: hsla(210, 29%, 54%, 0.5);
+    color: #ffffff;
+    border-radius: 1rem;
+    border: 0.25rem solid black;
+    justify-content: center;
+    align-content: center;
+    flex: 0.3;
+}
+
+.table a {
+    color: #ffffff;
+}
+
+footer h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer .table {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+footer .table th, footer .table td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+footer .table th {
+    width: 150px;
+    color: #ddd;
+}
+
+footer .map {
+    flex: 0.3;
+    width: 100%;
+    max-width: 30%;
+    height: 15%;
+    border: 0;
+    margin: 2rem;
+    justify-content: center;
+    align-content: center;
+    border-radius: 1rem;
+}
+
+footer .socials img {
+    width: 3rem;
+    margin: 1rem;
+}
+
+footer .socials a {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+footer .cardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .help {
+    margin-top: 1rem; 
+}
+
+footer .help a {
+    text-decoration: none;
+    color: white;
+    background-color: #2C3E50;
+}
+
+.errorMessage {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 0.85em; 
+    margin-top: 0.25rem; 
+    text-align: left;
+}
+
+.sitemap {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-title {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-title h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white; 
+}
+
+.footer-title ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-title ul li {
+    margin-bottom: 5px;
+}
+
+.sitemap a {
+    text-decoration: none; 
+    color: white; 
+}
+
+@media (min-width: 769px) {
+    #menu{
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #userProfilePic{
+        display: none;
+    }
+    .pageHeading {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .pageHeading form {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .pageHeading form input[type="text"] {
+        flex: 1;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        max-height: 0;
+    }
+
+    .navbar.show {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        transition: max-height 0.3s ease;
+        overflow: hidden;
+        margin-top: 2vh;
+        max-height: 50vh;
+    }
+
+    .navbar a {
+        text-align: center;
+    }
+
+    footer {
+        padding: 2rem 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        max-width: 90%;
+    }
+
+    .footer-section .socials img {
+        width: 2rem;
+    }
+
+    .map {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .pageHeading .logo img {
+        max-width: 6.25rem;
+    }
+
+    .pageHeading form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .pageHeading form button {
+        margin: 0.5rem 0;
+    }
+
+    footer .footer-section {
+        max-width: 90%;
+        margin: 0.5rem 0;
+    }
+}

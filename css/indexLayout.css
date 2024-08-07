@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.cards-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(240, 240, 240, 0.4);
+}
+
+.card {
+  width: 30%;
+  background-color: rgb(240, 240, 240);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#new-topic {
+  display: flex;
+  flex-direction: column;
+}
+
+#new-topic input,
+#new-topic select {
+  margin-bottom: 5px;
+}
+
+.topic.new-replies {
+  background-color: lightyellow;
+}
+
+.disCaptions {
+  background-color: rgba(0, 0, 10, 0.6);
+  color: white;
+  padding: 1rem; 
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .card {
+      width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}

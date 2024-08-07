@@ -1,0 +1,245 @@
+.content {
+    display: flex;
+    border-radius: 0.5rem;
+}
+
+.filter {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 1.3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 1.3rem;
+}
+
+.filter h2 {
+    margin-bottom: 1rem;
+}
+
+.filter label {
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.filter select,
+.filter button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+.filter input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.filter .checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
+.filter button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filter button:hover {
+    background-color: #45a049;
+}
+
+.filter button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.main-section {
+    flex-grow: 1;
+    padding: 1.3rem;
+    overflow-y: auto;
+    max-height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem; 
+}
+
+.main-section::-webkit-scrollbar {
+    width: 10px; 
+    background-color: #f0f0f0;
+}
+
+.main-section::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;
+    border-radius: 5px;
+}
+
+.main-section::-webkit-scrollbar-thumb:hover {
+    background-color: #a0a0a0;
+}
+
+.main-section::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+.main-section::-webkit-scrollbar-track:hover {
+    background-color: #e0e0e0;
+}
+
+.product-container {
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    border: 0.0625rem solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.3rem;
+    padding: 0.625rem;
+}
+
+.product-image {
+    width: 9.375rem;
+    height: 9.375rem;
+    margin-right: 1.3rem;
+    border: 0.0625rem solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    flex-grow: 1;
+    width: 55%;
+}
+
+.add-to-cart {
+    margin-left: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.add-to-cart button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.add-to-cart button:hover {
+    background-color: #45a049;
+}
+
+.add-to-cart button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.add-to-cart button.full-width {
+    width: 100%;
+}
+
+.add-to-cart button.large {
+    padding: 1rem 2rem; 
+}
+
+.price-highlight {
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.desc{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.product-image {
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.4);
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter {
+        margin-right: 0;
+        margin-bottom: 1.3rem;
+    }
+
+    .main-section {
+        padding: 1rem; 
+        max-height: none;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .product-image {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .product-info {
+        width: 100%;
+    }
+
+    .add-to-cart {
+        margin-left: 0;
+    }
+
+    .add-to-cart button {
+        width: 100%;
+    }
+
+    .price-highlight {
+        margin-bottom: 0.5rem;
+    }
+
+    .desc, #desc {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 0.5rem;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .filter {
+        padding: 1rem;
+    }
+
+    .product-image {
+        display: none;
+    }
+}

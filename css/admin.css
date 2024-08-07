@@ -1,0 +1,189 @@
+.table-container {
+    margin: 20px;
+    overflow-x: auto;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    min-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.lockBTN {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.lockBTN:hover {
+    background-color: #e60000;
+}
+
+.unlockBTN {
+    background-color: #4dff5c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.unlockBTN:hover {
+    background-color: #00eb14;
+}
+
+@media (max-width: 768px) {
+    .pageHeading {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .pageHeading form {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .pageHeading form input[type="text"] {
+        flex: 1;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        max-height: 0;
+    }
+
+    .navbar.show {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        transition: max-height 0.3s ease;
+        overflow: hidden;
+        margin-top: 2vh;
+        max-height: 50vh;
+    }
+
+    .navbar a {
+        text-align: center;
+    }
+
+    footer {
+        padding: 2rem 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        max-width: 90%;
+    }
+
+    .footer-section .socials img {
+        width: 2rem;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .styled-table {
+        min-width: 100%;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pageHeading .logo img {
+        max-width: 6.25rem;
+    }
+
+    .pageHeading form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .pageHeading form button {
+        margin: 0.5rem 0;
+    }
+
+    footer .footer-section {
+        max-width: 100%;
+    }
+
+    .footer-section .contact th,
+    .footer-section .contact td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-section .socials img {
+        width: 1.5rem;
+    }
+
+    .footer-section .map iframe {
+        height: auto;
+    }
+
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .styled-table {
+        min-width: 100%;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 8px;
+    }
+}

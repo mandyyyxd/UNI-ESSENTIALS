@@ -1,0 +1,247 @@
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header.dark-theme {
+    background-color: #1f1f1f;
+}
+
+.navbar.dark-theme {
+    background-color: #2c2c2c;
+}
+
+#searchButton.dark-theme {
+    background-color: hsla(210, 4%, 21%, 0.5);
+    color: #ffffff;
+}
+
+#searchButton:hover.dark-theme {
+    background-color: hsla(210, 1%, 33%, 0.5);
+    color: #ffffff;
+}
+
+.selected.dark-theme {
+    background-color: #4e4d4d;
+    color: #ffffff;
+}
+
+a.dark-theme {
+    color: #ffffff;
+}
+
+a:hover.dark-theme {
+    background-color: #3b3838;
+    color: #bb86fc;
+}
+
+.card.dark-theme {
+    background-color: #1e1e1e;
+}
+
+.content.dark-theme {
+    background-color: #535151;
+    color: #ffffff;
+}
+
+.logoutBTN.dark-theme {
+    background-color: #8a8484;
+}
+
+.logoutBTN:hover.dark-theme {
+    background-color: #9b9999;
+}
+
+footer.dark-theme {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+h1.dark-theme, h2.dark-theme, h3.dark-theme, h4.dark-theme {
+    color: #ffffff;
+}
+
+.formContainer.dark-theme {
+    background-color: #4e4d4d;
+    color: #ffffff;
+}
+
+.socials.dark-theme {
+    background-color: #ffffff;
+    color: #000000;
+    border: 0.25rem solid black;
+}
+
+.table.dark-theme {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.table a.dark-theme {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+footer .table th.dark-theme {
+    color: #ddd;
+}
+
+footer .help a.dark-theme {
+    color: white;
+    background-color: #343435;
+}
+
+.main-section.dark-theme {
+    background-color: #343435;
+}
+
+.filter.dark-theme {
+    background-color: #343435;
+}
+
+.formGroup label.dark-theme {
+    color: white;
+}
+
+.product-container.dark-theme{
+    background-color: #4e4d4d;
+}
+
+button.dark-theme{
+    background-color: #363636;
+    border: solid white
+}
+
+button:hover.dark-theme{
+    background-color: #5f5b5b;
+    border: solid white
+}
+
+.formContainer .btn.dark-theme {
+    background-color: #202020;
+    border: black;
+}
+
+.formContainer .btn:hover.dark-theme {
+    background-color: #3a3939;
+    border: black;
+}
+
+#themeButton.dark-theme {
+    background-color: #202020;
+    border: black;
+}
+
+#themeButton:hover.dark-theme {
+    background-color: #3a3939;
+    border: black;
+}
+
+#archiveButton.dark-theme {
+    background-color: #202020;
+    border: black;
+}
+
+#archiveButton:hover.dark-theme {
+    background-color: #3a3939;
+    border: black;
+}
+
+.errorMessage.dark-theme {
+    color: #ff9900;
+}
+
+.cookie-consent-modal {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.cookie-consent-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cookie-consent-content p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+#acceptCookiesButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#acceptCookiesButton:hover {
+    background-color: #45a049;
+}
+
+.cartTitle.dark-theme{
+    background-color: #4e4d4d;
+    color: #ffffff;
+}
+
+#cart-items button.dark-theme{
+    color:white;
+}
+
+.userContent.dark-theme, .address-details.dark-theme, .card-details.dark-theme{
+    background-color: #4e4d4d;
+    color: #ffffff;
+}
+
+#applyCoupon.dark-theme {
+    background-color: #202020;
+    border: black;
+}
+
+#applyCoupon:hover.dark-theme {
+    background-color: #3a3939;
+    border: black;
+}
+
+.container.dark-theme, .forumPostandFilters.dark-theme, .user_input_container.dark-theme, .search_engine.dark-theme, .table-container.dark-theme{
+    background-color: #363535;
+    color: #ffffff;
+}
+
+.post.dark-theme{
+    background-color: #414040;
+    color: #ffffff;
+    border: solid 2px white;
+}
+
+.post-content.dark-theme, .post-details.dark-theme{
+    color: white;
+}
+
+.search_engine label.dark-theme{
+    background-color: #4e4d4d;
+    color: #ffffff;
+}
+
+.search_engine button[type="submit"].dark-theme {
+    background-color: #202020;
+    border: black;
+}
+
+.search_engine button[type="submit"]:hover.dark-theme {
+    background-color: #292727;
+}
+
+#filterForm label.dark-theme{
+    color: white;
+}

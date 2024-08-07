@@ -1,0 +1,109 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    border: 0.075rem solid hsl(210, 17%, 70%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2C3E50;
+}
+
+.formContainer .btn {
+    padding: 0.5rem 1rem;
+    border: 0.075rem solid #2C3E50;
+    background-color: #2C3E50;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+}
+
+.formContainer .btn:hover {
+    background-color: #1ABC9C;
+}
+
+.formContainer span {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.formContainer span a {
+    color: #2C3E50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.formContainer span a:hover {
+    color: #1ABC9C;
+}
+
+.formContainer a {
+    text-align: right;
+    color: #2C3E50;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.formContainer a:hover {
+    color: #1ABC9C;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.formGroup label {
+    width: 30%;
+    margin-right: 1rem;
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+.formGroup input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 0.075rem solid hsl(210, 17%, 70%);
+    border-radius: 0.3rem;
+}
+
+@media (max-width: 768px) {
+    .formContainer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .formContainer {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .formGroup {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .formGroup label {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .formGroup input {
+        width: 100%;
+    }
+}
